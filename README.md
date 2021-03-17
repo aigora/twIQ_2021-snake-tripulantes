@@ -4,8 +4,8 @@ Nuestro equipo va a realizar el mítico juego de Snake, consta de una serpiente 
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+Antonio Porras Hervella - antonioporrashervella. Marcos Vasallo Macarro - marcosvasallo9. Katty Vásquez Peinado - kattyvasq.
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Uno de nuestros objetivos es aprender a usar con mas facilidad y con más rapidez el programa DevC++, pero nuestro principal objetivo es que la gente se divierta con nuestro juego de Snake y poder sacar un 10 en la nota del trabajo en grupo. : )
