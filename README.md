@@ -1,6 +1,6 @@
-# [Título del trabajo]
+# Juego de Snake en lenguage C
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+Nuestro equipo va a realizar el mítico juego de Snake, consta de una serpiente incial la cual tiene que ir comiéndose las frutas que van cayendo por la pantalla sin chocarse con los muros y sin chocarse consigo misma. Tienes tres vidas. ¿Podrás tener tú el record? Inténtalo!! : ).
 
 ## Integrantes del equipo
 
