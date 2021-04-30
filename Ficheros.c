@@ -13,7 +13,7 @@ int main()
  while(! f.eof())
  {
  cout << snake << endl;
- dato = f.get();
+ snake = f.get();
  }
  f.close();
  }
