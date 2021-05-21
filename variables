@@ -1,0 +1,11 @@
+int velocidad
+char tecla
+struct Tserpiente{
+int cuerpo [200][2];
+int tam=10;
+int dir=3;
+int velocidad=60;
+int n=1;
+int xc=30, yc=18;
+char tecla
+}
