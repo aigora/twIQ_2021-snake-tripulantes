@@ -1,26 +1,28 @@
-#include <stdio.h>
-#include <windows.h>
-#include <iostream>
-#include <stdlib.h>
-#include <conio.h>
-
-#define ARRIBA 72
-#define DERECHA 77
-#define ABAJO 80
-#define IZQUIERDA 75
-#define ESC 27
-
-
-
-void gotoxy(int x, int y) {
-  HANDLE hCon;
-  COORD dwPos;
-  
-  dwPos.X=x;
-  dwPos.Y=y;
-  hCon=GetStdHandle(STD_OUTPUT_HANDLE);
-  SetConsoleCursorPosition(hCon,dwPos);
-  
+int main()
+{
+ OcultaCursor();
+ 
+ pintar();
+ gotoxy(xc, yc); printf("%c", 4);
+ 
+ while(tecla != ESC && game_over())
+ {
+ borrar_cuerpo();
+ guardar_posicion();
+ dibujar_cuerpo();
+ comida();
+ teclear();
+ teclear();
+ 
+ if(dir == 1) y--;
+ if(dir == 2) y++;
+ if(dir == 3) x++;
+ if(dir == 4) x--;
+ 
+ Sleep(velocidad);
+ }
+ pintar();
+ return 0;
 }
 
 void teclear() {
