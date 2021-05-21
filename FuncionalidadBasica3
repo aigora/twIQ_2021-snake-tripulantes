@@ -1,0 +1,46 @@
+void comida()
+{
+ if(x == xc && y == yc)
+ {
+ xc = (rand() % 73) + 4;
+ yc = (rand() % 19) + 4;
+ 
+ tam++;
+ gotoxy(xc, yc); printf("%c", 4);
+ }
+}
+bool game_over()
+{
+ if(y == 3 || y == 23 || x == 2 || x == 77) return false;
+ for(int j = tam - 1; j > 0; j--){
+ if(cuerpo[j][0] == x && cuerpo[j][1] == y)
+ return false;
+ }
+ return true;
+}
+int main()
+{
+ OcultaCursor();
+ 
+ pintar();
+ gotoxy(xc, yc); printf("%c", 4);
+ 
+ while(tecla != ESC && game_over())
+ {
+ borrar_cuerpo();
+ guardar_posicion();
+ dibujar_cuerpo();
+ comida();
+ teclear();
+ teclear();
+ 
+ if(dir == 1) y--;
+ if(dir == 2) y++;
+ if(dir == 3) x++;
+ if(dir == 4) x--;
+ 
+ Sleep(velocidad);
+ }
+ pintar();
+ return 0;
+}
