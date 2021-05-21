@@ -10,12 +10,7 @@
 #define IZQUIERDA 75
 #define ESC 27
 
-int cuerpo[200][2];
-int n=1, tamaño=10, direccion=3;
-int x=10, y=12;
-int xc=30, yc=15;
-int velocidad=60;
-char tecla;
+
 
 void gotoxy(int x, int y) {
   HANDLE hCon;
