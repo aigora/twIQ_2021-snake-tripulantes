@@ -7,20 +7,21 @@
 #define DERECHA 77
 #define ABAJO 80
 #define ESC 27
+#define VELOCIDAD 60
 
 
-int velocidad;
-char tecla;
-struct Tserpiente{
-int cuerpo [200][2];
-int n = 1, tam = 10, dir = 3;
-int velocidad=60;
-int xc=30, yc=18;
-char tecla;
-}
+
+
 
 
 int main(){
+
+       struct Tserpiente{
+       int cuerpo [200][2];
+       int n = 1, tam = 10, dir = 3;
+       int xc=30, yc=18;
+       char tecla;
+       }
 	char opcion;
 	// Menu:
 	// Mensaje: Bienvenido al SNAKE!
@@ -157,23 +158,3 @@ int main()
  return 0;
 }
 
-
-int main()
-{
- ifstream f;
- char snake;
- f.open("snake.exe");
- if(!f)
- cout << "Error abriendo el juego" << endl;
- else
- {
- snake = f.get();
- while(! f.eof())
- {
- cout << snake << endl;
- snake = f.get();
- }
- f.close();
- }
- return 0;
-}
