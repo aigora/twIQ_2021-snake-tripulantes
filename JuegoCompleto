@@ -34,3 +34,5 @@ void inicializarBaraja (Baraja baraja) {
 		}
 	}
 }
+
+// para intercambiar dos cartas
