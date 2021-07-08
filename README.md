@@ -1,11 +1,11 @@
-# Juego de Snake en lenguage C
+# Juego de las siete y media
 
-Nuestro equipo va a realizar el mítico juego de Snake, consta de una serpiente incial la cual tiene que ir comiéndose las frutas que van cayendo por la pantalla sin chocarse con los muros y sin chocarse consigo misma. Tienes tres vidas. ¿Podrás tener tú el record? Inténtalo!! : ).
+Nuestro equipo va a realizar el juego de cartas de las 7 y media, consiste en conseguir con las cartas de la baraja española, los valores de las cartas son, 1, 2, 3, 4, 5, 6, 7, tienen sus valores correspondientes, la sota (el 10), el caballo (el 11), y el rey (el 12) tienen los valores de 0.5, es decir medio punto. se juega de la siguinte forma, se reparte una carta y si crees que puedes ganar con esa te plantas, y sino, pides otra hasta intentar conseguir las 7 y media, el que mas se acerque gana la partida, en el caso de pasarse, pierdes, asi que mide bien tus moviminetos....
 
 ## Integrantes del equipo
 
-Antonio Porras Hervella - antonioporrashervella. Marcos Vasallo Macarro - marcosvasallo9. Katty Vásquez Peinado - kattyvasq.
+Antonio Porras Hervella - antonioporrashervella. 
 
 ## Objetivos del trabajo
 
-Uno de nuestros objetivos es aprender a usar con mas facilidad y con más rapidez el programa DevC++, pero nuestro principal objetivo es que la gente se divierta con nuestro juego de Snake y poder sacar un 10 en la nota del trabajo en grupo. : )
+El objetivo es aprender a usar con mas facilidad y con más rapidez el programa DevC++, pero el principal objetivo es que la gente se divierta con el juego y poder sacar un 10 en la nota del trabajo en grupo. : )
