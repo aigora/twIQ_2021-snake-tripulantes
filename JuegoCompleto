@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+
+// definimos la baraja de cartas
+
+#define PALOS 4
+#define NUMEROS 10
+#define CARTAS (NUMEROS*PALOS)
+
+typedef enum Palo {
+	Oros,
+	Copas,
+	Espadas,
+	Bastos,
+} Palo;
+
+typedef struct Carta {
+	Palo palo;
+	int numero;
+} Carta;
+
+typedef Carta Baraja[CARTAS];
+
+// se inicializa la baraja
+
+void inicializarBaraja (Baraja baraja) {
+	int i;
+	int j;
+	for (i=0; i<PALOS; j++) {
+		for (j=0; j<NUMEROS; j++) {
+			baraja[NUMEROS*i+j].palo = i;
+			baraja[NUMEROS*i+j].numero = j;
+		}
+	}
+}
