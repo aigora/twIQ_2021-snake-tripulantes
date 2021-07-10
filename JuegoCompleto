@@ -171,7 +171,44 @@ int gana_jugador (float puntos_jugador, float puntos_ordenador) {
 
 //el menu del juego
 
+void juego (Baraja baraja) {
 
+	printf("+--------------------------------+\n");
+	printf("| BIENVENIDO A LAS SIETE Y MEDIA |\n");
+	printf("+--------------------------------+\n");
+	
+	int carta_actual;
+	float puntos_jugador, puntos_ordenador;
+	int jugador_sigue, ordenador_sigue;
+	
+	carta_actual = 0;
+	puntos_jugador = 0;
+	puntos_ordenador = 0;
+	jugador_sigue = 1;
+	ordenador_sigue = 1;
+	
+	do {
+		// carta para el jugador
+		
+		if (jugador_sigue) {
+		
+			if (printf("¿Quieres una carta?\n")) {
+				puntos_jugador += dar_carta(baraja, &carta_actual, "el jugador");
+			
+				if (puntos_jugador > 7.5) {
+					printf("Te has pasado... :(\n");
+					jugador_sigue = 0;
+				}
+			} else {
+				jugador_sigue = 0;
+			}
+		}
+		
+		// carta para el ordenador
+		
+		
+	
+	
 
 		
 
