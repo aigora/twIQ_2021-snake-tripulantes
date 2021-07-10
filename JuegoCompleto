@@ -27,7 +27,7 @@ typedef Carta Baraja[CARTAS];
 void inicializarBaraja (Baraja baraja) {
 	int i;
 	int j;
-	for (i=0; i<PALOS; j++) {
+	for (i=0; i<PALOS; i++) {
 		for (j=0; j<NUMEROS; j++) {
 			baraja[NUMEROS*i+j].palo = i;
 			baraja[NUMEROS*i+j].numero = j;
