@@ -199,11 +199,11 @@ void juego (Baraja baraja) {
 		
 		if (jugador_sigue) {
 		
-			if (printf("¿Quieres una carta?\n")) {
+			if (pregunta("¿Quieres una carta?")) {
 				puntos_jugador += dar_carta(baraja, &carta_actual, "el jugador");
 			
 				if (puntos_jugador > 7.5) {
-					printf("Te has pasado... :(\n");
+					pregunta("Te has pasado... :(");
 					jugador_sigue = 0;
 				}
 			} else {
@@ -219,26 +219,26 @@ void juego (Baraja baraja) {
 				puntos_ordenador += dar_carta(baraja, &carta_actual, "el ordenador");
 				
 				if (puntos_ordenador > 7.5) {
-					printf("El ordenador se ha pasado...\n);
+					pregunta("El ordenador se ha pasado...");
 					ordenador_sigue = 0;
 				}
 			} else {
-				printf("El ordenador se planta\n");
+				pregunta("El ordenador se planta");
 				ordenador_sigue = 0;
 			}
 		}
 		
 		printf(" - Jugador: %.1f puntos \n", puntos_jugador);
-		printf(" - Ordenador: %.1f puntos \n, puntos_ordenador);
+		printf(" - Ordenador: %.1f puntos \n", puntos_ordenador);
 		
 	} while (jugador_sigue || ordenador_sigue);
 	
 	// resultado de la partida
 	
 	if (gana_jugador(puntos_jugador, puntos_ordenador))
-		printf("ENHORABUENA HAS GANADO!!! :)\n");
+		pregunta("ENHORABUENA HAS GANADO!!! :)\n");
 	else
-		printf("Has perdido... Otra vez sera :( \n");
+		pregunta("Has perdido... Otra vez sera :( \n");
 		
 }
 
@@ -252,7 +252,7 @@ int main (void) {
 	do {
 		barajar(baraja);
 		juego(baraja);
-	} while (printf("¿Quieres jugar otra partida?\n"));
+	} while (preguntar("¿Quieres jugar otra partida?"));
 	
 	return 0;
 }
