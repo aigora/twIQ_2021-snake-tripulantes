@@ -199,7 +199,7 @@ void juego (Baraja baraja) {
 		
 		if (jugador_sigue) {
 		
-			if (pregunta("¿Quieres una carta?")) {
+			if (preguntar("¿Quieres una carta?")) {
 				puntos_jugador += dar_carta(baraja, &carta_actual, "el jugador");
 			
 				if (puntos_jugador > 7.5) {
